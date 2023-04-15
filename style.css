@@ -1,0 +1,67 @@
+iframe {
+  border:10px solid black;
+  display: block;
+  width: 500px;
+  height:90px
+}
+html {
+  height: 100%;
+}
+body {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  min-width: 800px;
+  background-color:black;
+}
+canvas {
+  width: 500px;
+  height: 500px;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 500px;
+  height: 3px;
+  background: white;
+  outline: none;
+  opacity: 0.8;
+}
+
+body > div {
+  display: table-cell;
+}
+.left {
+  background: black;
+}
+.middle {
+  background: black;
+  width: 500px;
+}
+.right {
+  background: black
+}
+.sec {
+
+}
+h1 {
+  color:white;
+  font-size:100px;
+  text-align: center;
+  padding : 0;
+  margin : 0;
+}
+
+.image {
+  text-align: right;
+  padding : 0;
+  margin : 0;
+  display:inline-block;
+  font-size: 0;
+}
