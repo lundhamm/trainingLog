@@ -182,8 +182,8 @@ kna = dfS1[['date','Max:Knäböj','Min:Knäböj','Mean:Knäböj']].replace('', n
 sh[2].set_dataframe(dfL,(1,1))
 sh[2].set_dataframe(dfLL,(1,5))
 
-sh[2].set_dataframe(bank,(6,1))
-sh[2].set_dataframe(mark,(6,5))
-sh[2].set_dataframe(styrkelyft,(6,9))
-sh[2].set_dataframe(milit,(6,15))
-sh[2].set_dataframe(kna,(6,19))
+sh[2].set_dataframe(bank,(15,1))
+sh[2].set_dataframe(mark,(15,5))
+sh[2].set_dataframe(styrkelyft,(15,9))
+sh[2].set_dataframe(milit,(15,15))
+sh[2].set_dataframe(kna,(15,19))

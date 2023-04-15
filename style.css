@@ -1,8 +1,8 @@
 iframe {
   border:10px solid black;
   display: block;
-  width: 500px;
-  height:90px
+  width: 1000px;
+  height:120px
 }
 html {
   height: 100%;
@@ -14,12 +14,12 @@ body {
   padding: 0;
   width: 100%;
   table-layout: fixed;
-  min-width: 800px;
+  min-width: 1000px;
   background-color:black;
 }
 canvas {
-  width: 500px;
-  height: 500px;
+  width: 1000px;
+  height: 1000px;
 }
 .slidecontainer {
   width: 100%;
@@ -42,7 +42,7 @@ body > div {
 }
 .middle {
   background: black;
-  width: 500px;
+  width: 1000px;
 }
 .right {
   background: black
