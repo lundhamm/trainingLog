@@ -1,3 +1,18 @@
+#
+#   Author: Per Lundhammar
+#   Date: 2023-04-15
+#
+#   Run to update data tables in mart.
+#
+#   TODO:
+#           - Fix link to timeseris graphs
+#           - Add table { 'Data updated at:': MAX(partitionKey)
+#                         'Number of workouts:': COUNT(DISINCT date)
+#                         'Total weight lifted:': SUM(weight*reps)}
+#           - Make it so only the last updated are in cleaned sheet.
+
+
+
 import pygsheets
 import pandas as pd
 import datetime
@@ -178,12 +193,15 @@ kna = dfS1[['date','Max:Knäböj','Min:Knäböj','Mean:Knäböj']].replace('', n
 
 
 
+print(df['partitionKey'])
 
-sh[2].set_dataframe(dfL,(1,1))
-sh[2].set_dataframe(dfLL,(1,5))
 
-sh[2].set_dataframe(bank,(15,1))
-sh[2].set_dataframe(mark,(15,5))
-sh[2].set_dataframe(styrkelyft,(15,9))
-sh[2].set_dataframe(milit,(15,15))
-sh[2].set_dataframe(kna,(15,19))
+
+#sh[2].set_dataframe(dfL,(1,1))
+#sh[2].set_dataframe(dfLL,(1,5))
+
+#sh[2].set_dataframe(bank,(15,1))
+#sh[2].set_dataframe(mark,(15,5))
+#sh[2].set_dataframe(styrkelyft,(15,9))
+#sh[2].set_dataframe(milit,(15,15))
+#sh[2].set_dataframe(kna,(15,19))
